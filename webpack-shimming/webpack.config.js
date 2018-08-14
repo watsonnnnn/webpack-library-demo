@@ -5,7 +5,8 @@ const CleanWebpackPlugin = require('clean-webpack-plugin');
 
 console.log(require.resolve('./src/index.js')) 
 console.log(process.env.webpack_SERVE)
-//文件绝对路径。和path.resolve不同 path是专门解析文件路径 这个会按require的方式，
+// https://webpack.js.org/api/module-methods/#require-resolve 同步检索module Id 也就是文件路径 填目录的话 默认是目录下的index.js
+//文件绝对路径。和path.resolve不同 path模块是专门解析文件路径 
 module.exports = {
   entry: {
     index: './src/index.js',
