@@ -23,7 +23,7 @@ module.exports = {
     //   // export of a module by configuring it with an "array path" (e.g.[module, child, ...children ? ]).So
     //   // let 's imagine we only wanted to provide the join method from lodash wherever it's
     //   // invoked: 
-    //   join: ['lodash', 'join'] // 数组 ['lodash', 'join'] 多个就在对象里面写多个
+    //   join: ['lodash', 'join'] // 数组 ['lodash', 'join',...] 多个就在对象里面写多个
     // })
     new CleanWebpackPlugin([path.join(__dirname, './dist')]),
     new HtmlWebpackPlugin({
